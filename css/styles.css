@@ -524,3 +524,75 @@ Contact
 Footer
 ===============
 */
+
+
+.footer{
+  background: rgb(39, 38, 38);
+}
+.footer-nav ul{
+  display: flex;
+  justify-content: space-between;
+  width: 35vw;
+  font-size: 1.1rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: capitalize;  
+}
+.footer-nav ul li{
+    justify-content: space-between;
+
+}
+.footer-nav ul li a{
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: var(--spacing);
+}
+
+.socials ul{
+  display: flex;
+  justify-content: center; 
+  
+}
+
+.socials ul li{
+  padding-right: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #fff;
+
+}
+
+.copyright p{
+  display: flex;
+  justify-content: center;
+  letter-spacing: var(--spacing);
+  color: #fff;
+  font-size: 1rem;
+}
+
+@media screen and (max-width:576px) {
+  .footer-nav ul{
+    flex-wrap: wrap;
+  }
+  .footer-nav ul li{
+    flex: 0 0 50%;
+    text-align: center;
+  }
+  .copyright p{
+    text-align: center;
+  }
+}
+@media screen and (max-width:992px) {
+  .footer-nav ul{
+    flex-wrap: wrap;
+  }
+  .footer-nav ul li{
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 1.2rem;
+  }
+  .copyright p{
+    text-align: center;
+  }
+}
